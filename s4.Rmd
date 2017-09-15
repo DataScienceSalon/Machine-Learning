@@ -1,0 +1,9 @@
+# Machine Learning with R
+```{r child = "s4ch01.Rmd"}
+```
+```{r child = "s4ch02.Rmd"}
+```
+```{r child = "s4ch03.Rmd"}
+```
+```{r child = "s4ch04.Rmd"}
+```
