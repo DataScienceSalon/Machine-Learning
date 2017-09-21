@@ -1,0 +1,35 @@
+## Supervised Learning
+There are two types of supervised learning problems: *regression*, and *classification*. In regression, we are attempting to predict a continuous output, by mapping input variables to some continous output or hypothesis function.
+
+Examples of *regression* problems are:
+
+* Predicting the price of a company's stock or sales in 6 months, given its past performance, the performance of its competitors, and/or macro economic indicators.
+* Predicting which potential clients might default on a loan in order to reduce loan qualification rates among high-risk clients, adjust interest rates based on client risk factors, and minimize company losses.
+* Modeling the relationship between crime rates and property values and predicting the impact of crime reduction strategies on home prices.
+* Designing an SUV that meets Corporate Average Fuel Economy (CAFE) regulations for fuel efficiency, and given the design, predicting the associated highway and city mileage.
+
+
+*Classification* problems, on the other hand, are about predicting discrete categorical output.  Examples include:
+
+* Character and speech recognition applications
+* Data Security - Classifying email messages into spam, files as malware, intrusions as threats.
+* Personal security - Spot things human screeners might miss in security screenings at airports, stadiums, concerts, and other venues. That can speed up the process significantly and ensure safer events.
+* Fraud detection - Tools that compare millions of transactions and can precisely distinguish between legitimate and fraudulent transactions between buyers and sellers. 
+* Healthcare - Given a patient has a tumor, predict whether the tumor is malignant or benign.
+
+In regression, we are attempting to predict a continuous output, by mapping input variables to some continous output or hypothesis function.
+
+In this section, we'll exam several techniques for addressing both regression and classification problems.  The topics include:   
+1.1. Linear Regression  
+1.2. Logistic Regression  
+1.3. Neural Networks  
+1.4. Support Vector Machines  
+
+```{r child = "s22ch01.Rmd"}
+```
+```{r child = "s22ch02.Rmd"}
+```
+```{r child = "s22ch03.Rmd"}
+```
+```{r child = "s22ch04.Rmd"}
+```

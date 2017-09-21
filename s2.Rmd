@@ -1,20 +1,10 @@
 # Machine Learning with Octave
 
-```{r child = "s2ch01.Rmd"}
+```{r child = "s21.Rmd"}
 ```
-```{r child = "s2ch02.Rmd"}
+```{r child = "s22.Rmd"}
 ```
-```{r child = "s2ch03.Rmd"}
+```{r child = "s23.Rmd"}
 ```
-```{r child = "s2ch04.Rmd"}
-```
-```{r child = "s2ch05.Rmd"}
-```
-```{r child = "s2ch06.Rmd"}
-```
-```{r child = "s2ch07.Rmd"}
-```
-```{r child = "s2ch08.Rmd"}
-```
-```{r child = "s2ch09.Rmd"}
+```{r child = "s4.Rmd"}
 ```

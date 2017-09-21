@@ -1,2 +1,0 @@
-## Machine Learning System Design
-Note, include advise for machine learning

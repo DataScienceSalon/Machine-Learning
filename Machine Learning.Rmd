@@ -5,13 +5,18 @@ author: John James  jjames@dataScienceSalon.org
 output:
   rmdformats::readthedown:
     highlight: kate
-bibliography: Health.bib
+bibliography: Machine Learning.BIB
 ---
 
 
 ```{r knitr_init, echo=FALSE, cache=FALSE, warning=FALSE, message=FALSE}
 library(knitr)
+library(kfigr)
 library(rmdformats)
+library(dplyr)
+library(ggplot2)
+library(statsr)
+library(RColorBrewer)
 
 ## Global options
 options(knitr.table.format = "html")
@@ -19,6 +24,8 @@ options(max.print="75", scipen=999, width = 800)
 opts_chunk$set(echo=FALSE,
 	             cache=TRUE,
                prompt=FALSE,
+               fig.height = 4,
+               fig.width = 10,
                tidy=TRUE,
                comment=NA,
                message=FALSE,

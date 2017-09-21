@@ -1,10 +1,10 @@
 # Machine Learning with Python
 
-```{r child = "s3ch01.Rmd"}
+```{r child = "s31.Rmd"}
 ```
-```{r child = "s3ch02.Rmd"}
+```{r child = "s32.Rmd"}
 ```
-```{r child = "s3ch03.Rmd"}
+```{r child = "s33.Rmd"}
 ```
-```{r child = "s3ch04.Rmd"}
+```{r child = "s34.Rmd"}
 ```
