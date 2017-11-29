@@ -179,18 +179,18 @@ lm_eqn <- function(m){
 coord = data.frame(x = mean(priceData$areas) + 2500, y = mean(priceData$prices) + 2510)
 
 
-splot <- ggplot2::ggplot(priceData, ggplot2::aes(x=areas, y=prices)) +
+costPlotZero <- ggplot2::ggplot(priceData, ggplot2::aes(x=areas, y=prices)) +
          ggplot2::geom_point() +
          ggplot2::theme_minimal() +
          ggplot2::theme(legend.position = "none") +
          ggplot2::geom_smooth(method=lm, se=FALSE, fullrange=TRUE) +
          ggplot2::geom_text(x = coord$x, y = coord$y, label = lm_eqn(m), parse = TRUE) +
          ggplot2::geom_point(aes(colour = "red", size = 17.5))
-splot
+costPlotZero
 ```
 `r kfigr::figr(label = "0cost", prefix = TRUE, link = TRUE, type="Figure")`: Regression Line with Zero Cost
 
-When $theta_0 \approx 0$  $theta_1 = 17.14$, our cost function is zero; however, if we change the data a bit, we get a new regression line with non-zero cost.
+When $\theta_0 \approx 0$  $\theta_1 = 17.14$, our cost function is zero; however, if we change the data a bit, we get a new regression line with non-zero cost.
 
 ```{r cost, echo = F, message = FALSE, warning=FALSE}
 prices <- c(180000, 270000, 405000)
@@ -209,7 +209,7 @@ lm_eqn <- function(m){
 coord = data.frame(x = 1.2 * min(priceData$areas) + 2500, y = 0.9 * max(priceData$prices) + 2510)
 
 
-splot <- ggplot2::ggplot(priceData, ggplot2::aes(x=areas, y=prices)) +
+costPlot <- ggplot2::ggplot(priceData, ggplot2::aes(x=areas, y=prices)) +
          ggplot2::geom_point() +
          ggplot2::theme_minimal() +
          ggplot2::theme(legend.position = "none") +
@@ -217,9 +217,11 @@ splot <- ggplot2::ggplot(priceData, ggplot2::aes(x=areas, y=prices)) +
          ggplot2::geom_text(x = coord$x, y = coord$y, label = lm_eqn(m), parse = TRUE) +
          ggplot2::geom_point(aes(colour = "red", size = 17.5)) +
          ggplot2::geom_segment(aes(x=areas, xend=areas, y=prices, yend=yhat, color="error"))+
-       labs(title="Regresssion Line Costs", color="series")
-splot
+       labs(title="Regression Line Costs", color="series")
+costPlot
 ```
-`r kfigr::figr(label = "cost", prefix = TRUE, link = TRUE, type="Figure")`: Regression Line with Cost
+`r kfigr::figr(label = "nonZeroCost", prefix = TRUE, link = TRUE, type="Figure")`: Regression Line with Cost
 
-Here with, $theta_0 = $ `round(coef(m)[1]`, and $theta_1 = $ `round(coef(m)[2]`, we observe a cost of $J(\theta_0,\theta_1) = $ `round(residuals(m)[1]^2,2)`
+Here $\theta_0$ = `r round(coef(m)[1],2)` and $\theta_1$ = `r round(coef(m)[2],2)`, yields a cost of 
+$J(\theta_0,\theta_1)$ = `r round(residuals(m)[1]^2,2)`
+

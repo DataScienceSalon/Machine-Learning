@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+title: "Machine Learning with Octave"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 author: John James  jjames@dataScienceSalon.org
 output:
@@ -36,41 +36,11 @@ knitr::knit_hooks$set(inline = function(x) {
 })
 ```
 
-```{r child = "s1ch01.Rmd"}
+
+```{r child = "s21.Rmd"}
 ```
-```{r child = "s1ch02.Rmd"}
+```{r child = "s22.Rmd"}
 ```
-```{r child = "s1ch03.Rmd"}
-```
-```{r child = "s1ch04.Rmd"}
-```
-```{r child = "s1ch05.Rmd"}
-```
-```{r child = "s1ch06.Rmd"}
-```
-```{r child = "s1ch07.Rmd"}
-```
-```{r child = "s1ch08.Rmd"}
-```
-```{r child = "s1ch09.Rmd"}
-```
-```{r child = "s1ch10.Rmd"}
-```
-```{r child = "s1ch11.Rmd"}
-```
-```{r child = "s1ch12.Rmd"}
-```
-```{r child = "s1ch13.Rmd"}
-```
-```{r child = "s1ch14.Rmd"}
-```
-```{r child = "s1ch15.Rmd"}
-```
-```{r child = "s1ch16.Rmd"}
-```
-```{r child = "s1ch17.Rmd"}
-```
-```{r child = "s1ch18.Rmd"}
+```{r child = "s23.Rmd"}
 ```
 
-# References

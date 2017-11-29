@@ -1,9 +1,0 @@
-# Machine Learning with R
-```{r child = "s41.Rmd"}
-```
-```{r child = "s42.Rmd"}
-```
-```{r child = "s43.Rmd"}
-```
-```{r child = "s44.Rmd"}
-```
